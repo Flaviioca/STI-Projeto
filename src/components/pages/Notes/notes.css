@@ -1,0 +1,89 @@
+p {
+  margin: 0;
+}
+.row {
+  height: 100%;
+}
+.hideCol {
+  display: none;
+}
+.col1 {
+  padding: 0;
+  overflow: auto;
+  max-height: 100vh;
+  border-right: 1px solid #eeeeee;
+}
+.col1 > .head1 {
+  margin: 22px 5%;
+  font-size: 24px;
+  font-weight: 400;
+  color: #c2c0c2;
+}
+.col1 > .noteCard {
+  width: 96%;
+  margin: 0 2%;
+  padding: 4%;
+  cursor: pointer;
+  margin-bottom: 2%;
+  min-height: 150px;
+  border-radius: 4px;
+  color: #8f8e8f;
+  border: 1px solid #c2c0c2;
+  background-color: #fff;
+}
+
+.col1 > .noteCard:hover {
+  color: #bbf3ce;
+  background-color: #3eb45f;
+}
+
+.crdTitle {
+  font-size: 20px;
+  font-weight: 400;
+}
+.date {
+  font-size: 12px;
+  font-weight: 400;
+}
+.desc {
+  margin-top: 2%;
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 230px;
+}
+
+.col2 > .editorHead {
+  padding: 2% 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.col2 > .editorHead > div {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.expandIcn {
+  padding: 3px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 30px;
+  color: #3eb45f;
+  border-radius: 6px;
+  border: 2px solid #3eb45f;
+}
+
+.tox-statusbar__branding {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .col2 > .editorHead {
+    flex-direction: column;
+  }
+  .col2 > .editorHead > div {
+    width: 100%;
+  }
+}
